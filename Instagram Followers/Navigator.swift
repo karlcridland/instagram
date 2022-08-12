@@ -96,7 +96,7 @@ class Navigator: UIView{
 class NavigatorButton: UIButton{
     
     let label: UILabel
-    let fontSize = CGFloat(12)
+    let fontSize = CGFloat(11)
     
     init(_ title: String, _ height: CGFloat) {
         self.label = UILabel(frame: CGRect(x: 5, y: height - fontSize - 2, width: 50, height: fontSize + 2))
@@ -109,8 +109,25 @@ class NavigatorButton: UIButton{
         self.addSubview(self.label)
     }
     
+    func setState(_ state: NavigatorButtonState){
+        switch (state){
+        case .active:
+            break
+        case .hover:
+            break
+        case .none:
+            break
+        }
+    }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
+}
+
+enum NavigatorButtonState: String{
+    case active
+    case hover
+    case none
 }

@@ -10,9 +10,12 @@ import UIKit
 
 class SettingsView: ContainerView{
     
+    let buttons = [
+        "test" : MenuButton()
+    ]
+    
     override init(height: CGFloat) {
         super .init(height: height)
-        self.backgroundColor = .green
     }
     
     required init?(coder: NSCoder) {
@@ -20,3 +23,15 @@ class SettingsView: ContainerView{
     }
 }
 
+class MenuButton: UIButton{
+    
+    override init(frame: CGRect) {
+        super .init(frame: frame)
+    
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+}

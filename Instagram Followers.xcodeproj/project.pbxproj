@@ -70,12 +70,12 @@
 		6D224E1828A2FB7D00C85932 /* Instagram Followers */ = {
 			isa = PBXGroup;
 			children = (
+				6D882FB928A65C3C00741FF8 /* Containers */,
 				6D224E1928A2FB7D00C85932 /* AppDelegate.swift */,
 				6D224E1B28A2FB7D00C85932 /* SceneDelegate.swift */,
 				6D224E1D28A2FB7D00C85932 /* ViewController.swift */,
 				6D665E2328A51B5600B33438 /* Instagram.swift */,
 				6D882FB528A64CBD00741FF8 /* Navigator.swift */,
-				6D882FB928A65C3C00741FF8 /* Containers */,
 				6D224E1F28A2FB7D00C85932 /* Main.storyboard */,
 				6D224E2528A2FB8300C85932 /* Assets.xcassets */,
 				6D224E2728A2FB8300C85932 /* LaunchScreen.storyboard */,
