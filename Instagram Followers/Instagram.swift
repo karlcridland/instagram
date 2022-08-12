@@ -27,4 +27,12 @@ class Instagram{
         
     }
     
+    func signIn(){
+        
+    }
+    
+    func signOut(){
+        
+    }
+    
 }

@@ -15,6 +15,11 @@
 		6D224E2628A2FB8300C85932 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D224E2528A2FB8300C85932 /* Assets.xcassets */; };
 		6D224E2928A2FB8300C85932 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D224E2728A2FB8300C85932 /* LaunchScreen.storyboard */; };
 		6D665E2428A51B5600B33438 /* Instagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D665E2328A51B5600B33438 /* Instagram.swift */; };
+		6D882FB628A64CBD00741FF8 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D882FB528A64CBD00741FF8 /* Navigator.swift */; };
+		6D882FB828A65BD700741FF8 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D882FB728A65BD700741FF8 /* ContainerView.swift */; };
+		6D882FBB28A65C4900741FF8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D882FBA28A65C4900741FF8 /* HomeView.swift */; };
+		6D882FBD28A65C8000741FF8 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D882FBC28A65C8000741FF8 /* ProfileView.swift */; };
+		6D882FBF28A65C8700741FF8 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D882FBE28A65C8700741FF8 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		6D224E2828A2FB8300C85932 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6D224E2A28A2FB8300C85932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D665E2328A51B5600B33438 /* Instagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instagram.swift; sourceTree = "<group>"; };
+		6D882FB528A64CBD00741FF8 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		6D882FB728A65BD700741FF8 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		6D882FBA28A65C4900741FF8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		6D882FBC28A65C8000741FF8 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		6D882FBE28A65C8700741FF8 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +74,8 @@
 				6D224E1B28A2FB7D00C85932 /* SceneDelegate.swift */,
 				6D224E1D28A2FB7D00C85932 /* ViewController.swift */,
 				6D665E2328A51B5600B33438 /* Instagram.swift */,
+				6D882FB528A64CBD00741FF8 /* Navigator.swift */,
+				6D882FB928A65C3C00741FF8 /* Containers */,
 				6D224E1F28A2FB7D00C85932 /* Main.storyboard */,
 				6D224E2528A2FB8300C85932 /* Assets.xcassets */,
 				6D224E2728A2FB8300C85932 /* LaunchScreen.storyboard */,
@@ -71,6 +83,17 @@
 				6D224E2228A2FB7D00C85932 /* Instagram_Followers.xcdatamodeld */,
 			);
 			path = "Instagram Followers";
+			sourceTree = "<group>";
+		};
+		6D882FB928A65C3C00741FF8 /* Containers */ = {
+			isa = PBXGroup;
+			children = (
+				6D882FB728A65BD700741FF8 /* ContainerView.swift */,
+				6D882FBA28A65C4900741FF8 /* HomeView.swift */,
+				6D882FBC28A65C8000741FF8 /* ProfileView.swift */,
+				6D882FBE28A65C8700741FF8 /* SettingsView.swift */,
+			);
+			path = Containers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,9 +168,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D665E2428A51B5600B33438 /* Instagram.swift in Sources */,
+				6D882FBD28A65C8000741FF8 /* ProfileView.swift in Sources */,
 				6D224E2428A2FB7D00C85932 /* Instagram_Followers.xcdatamodeld in Sources */,
 				6D224E1E28A2FB7D00C85932 /* ViewController.swift in Sources */,
+				6D882FB628A64CBD00741FF8 /* Navigator.swift in Sources */,
+				6D882FBF28A65C8700741FF8 /* SettingsView.swift in Sources */,
 				6D224E1A28A2FB7D00C85932 /* AppDelegate.swift in Sources */,
+				6D882FBB28A65C4900741FF8 /* HomeView.swift in Sources */,
+				6D882FB828A65BD700741FF8 /* ContainerView.swift in Sources */,
 				6D224E1C28A2FB7D00C85932 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,7 +252,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -278,7 +306,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -295,12 +323,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = J3C436QQA9;
+				DEVELOPMENT_TEAM = H3NWU7V86P;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Instagram Followers/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -312,7 +342,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -323,12 +353,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = J3C436QQA9;
+				DEVELOPMENT_TEAM = H3NWU7V86P;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Instagram Followers/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -340,7 +372,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
