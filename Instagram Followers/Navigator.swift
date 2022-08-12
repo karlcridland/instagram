@@ -95,6 +95,8 @@ class Navigator: UIView{
 
 class NavigatorButton: UIButton{
     
+    static var children: [NavigatorButton] = []
+    
     let label: UILabel
     let fontSize = CGFloat(11)
     
@@ -107,15 +109,27 @@ class NavigatorButton: UIButton{
         self.label.textAlignment = .center
         
         self.addSubview(self.label)
+        
+        NavigatorButton.children.append(self)
+        self.addTarget(self, action: #selector(clicked), for: .touchUpInside)
+    }
+    
+    @objc func clicked(){
+        self.setState(.active)
     }
     
     func setState(_ state: NavigatorButtonState){
         switch (state){
         case .active:
+            NavigatorButton.children.forEach { button in
+                button.setState(.none)
+            }
+            self.backgroundColor = .white
             break
         case .hover:
             break
         case .none:
+            self.backgroundColor = .clear
             break
         }
     }
@@ -126,7 +140,7 @@ class NavigatorButton: UIButton{
     
 }
 
-enum NavigatorButtonState: String{
+enum NavigatorButtonState{
     case active
     case hover
     case none

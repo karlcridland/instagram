@@ -9,10 +9,12 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    static var main: UIViewController?
     var firstVisit = true
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        ViewController.main = self
     }
     
     override func viewDidLayoutSubviews() {
@@ -43,6 +45,8 @@ class ViewController: UIViewController {
         navigator.frame = CGRect(x: 0, y: self.view.frame.height - 60, width: UIScreen.main.bounds.width, height: 60)
         self.view.addSubview(navigator)
         navigator.openHome()
+        
+        Instagram.shared.signIn()
     }
 
 }

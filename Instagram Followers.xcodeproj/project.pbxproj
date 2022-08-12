@@ -15,6 +15,7 @@
 		6D224E2628A2FB8300C85932 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D224E2528A2FB8300C85932 /* Assets.xcassets */; };
 		6D224E2928A2FB8300C85932 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D224E2728A2FB8300C85932 /* LaunchScreen.storyboard */; };
 		6D665E2428A51B5600B33438 /* Instagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D665E2328A51B5600B33438 /* Instagram.swift */; };
+		6D665E2628A6979E00B33438 /* IGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D665E2528A6979E00B33438 /* IGViewController.swift */; };
 		6D882FB628A64CBD00741FF8 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D882FB528A64CBD00741FF8 /* Navigator.swift */; };
 		6D882FB828A65BD700741FF8 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D882FB728A65BD700741FF8 /* ContainerView.swift */; };
 		6D882FBB28A65C4900741FF8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D882FBA28A65C4900741FF8 /* HomeView.swift */; };
@@ -33,6 +34,7 @@
 		6D224E2828A2FB8300C85932 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6D224E2A28A2FB8300C85932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D665E2328A51B5600B33438 /* Instagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instagram.swift; sourceTree = "<group>"; };
+		6D665E2528A6979E00B33438 /* IGViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGViewController.swift; sourceTree = "<group>"; };
 		6D882FB528A64CBD00741FF8 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		6D882FB728A65BD700741FF8 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
 		6D882FBA28A65C4900741FF8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				6D224E1928A2FB7D00C85932 /* AppDelegate.swift */,
 				6D224E1B28A2FB7D00C85932 /* SceneDelegate.swift */,
 				6D224E1D28A2FB7D00C85932 /* ViewController.swift */,
+				6D665E2528A6979E00B33438 /* IGViewController.swift */,
 				6D665E2328A51B5600B33438 /* Instagram.swift */,
 				6D882FB528A64CBD00741FF8 /* Navigator.swift */,
 				6D224E1F28A2FB7D00C85932 /* Main.storyboard */,
@@ -172,6 +175,7 @@
 				6D224E2428A2FB7D00C85932 /* Instagram_Followers.xcdatamodeld in Sources */,
 				6D224E1E28A2FB7D00C85932 /* ViewController.swift in Sources */,
 				6D882FB628A64CBD00741FF8 /* Navigator.swift in Sources */,
+				6D665E2628A6979E00B33438 /* IGViewController.swift in Sources */,
 				6D882FBF28A65C8700741FF8 /* SettingsView.swift in Sources */,
 				6D224E1A28A2FB7D00C85932 /* AppDelegate.swift in Sources */,
 				6D882FBB28A65C4900741FF8 /* HomeView.swift in Sources */,
@@ -252,7 +256,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -306,7 +310,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
